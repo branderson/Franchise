@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{7AA663E5-63A3-D516-7BB3-FAE4C4B0D90B}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Game/FranchiseNode.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Game/FranchiseNode.cs" Line="7" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Franchise PreferredExecutionTarget="Unity.Editor" />
+  <MultiItemStartupConfigurations />
+</Properties>
