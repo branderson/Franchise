@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>4</LangVersion>
-  </PropertyGroup>
+</PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -13,10 +13,11 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>Assets</BaseDirectory>
-  </PropertyGroup>
+	<LangVersion>default</LangVersion>
+</PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
@@ -27,7 +28,8 @@
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>
+	<LangVersion>default</LangVersion>
+</PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
@@ -36,7 +38,8 @@
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>
+	<LangVersion>default</LangVersion>
+</PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.XML" />
@@ -52,8 +55,23 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Controllers\GameCameraController.cs" />
-     <Compile Include="Assets\Scripts\Game\FranchiseNode.cs" />
-     <Compile Include="Assets\Scripts\Game\LinqDemo.cs" />
+     <Compile Include="Assets\Scripts\Controllers\MapController.cs" />
+     <Compile Include="Assets\Scripts\Data\Franchise.cs" />
+     <Compile Include="Assets\Scripts\Data\GridCoord.cs" />
+     <Compile Include="Assets\Scripts\Data\GridSquare.cs" />
+     <Compile Include="Assets\Scripts\Data\PopulationMap.cs" />
+     <Compile Include="Assets\Scripts\Managers\FranchiseManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\SpaceManager.cs" />
+     <Compile Include="Assets\Scripts\TerrainGenerator\Scripts\Algorithms\DiamondSquare.cs" />
+     <Compile Include="Assets\Scripts\TerrainGenerator\Scripts\Algorithms\GaussianBlur.cs" />
+     <Compile Include="Assets\Scripts\TerrainGenerator\Scripts\Algorithms\Utilities.cs" />
+     <Compile Include="Assets\Scripts\TerrainGenerator\Scripts\ContinuousTerrainGenerator.cs" />
+     <Compile Include="Assets\Scripts\TerrainGenerator\Scripts\HeightmapData.cs" />
+     <Compile Include="Assets\Scripts\TerrainGenerator\Scripts\MinMaxSliderDisplay.cs" />
+     <Compile Include="Assets\Scripts\TerrainGenerator\Scripts\TerrainDetailSettings.cs" />
+     <Compile Include="Assets\Scripts\TerrainGenerator\Scripts\TerrainGenerator.cs" />
+     <Compile Include="Assets\Scripts\TerrainGenerator\Scripts\TerrainTextureSettings.cs" />
+     <Compile Include="Assets\Scripts\TerrainGenerator\Scripts\WaterTiler.cs" />
      <Compile Include="Assets\Scripts\Utility\BaseClasses\CustomMonoBehaviour.cs" />
      <Compile Include="Assets\Scripts\Utility\BaseClasses\Singleton.cs" />
      <Compile Include="Assets\Scripts\Utility\Behaviours\CallFunctionOnEnable.cs" />
@@ -86,6 +104,11 @@
      <Compile Include="Assets\Scripts\Utility\Tuple\Tuple2.cs" />
      <Compile Include="Assets\Scripts\Utility\Tuple\Tuple3.cs" />
      <Compile Include="Assets\Scripts\Utility\Tuple\Tuple4.cs" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
  <Reference Include="UnityEngine.UIAutomation">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
  </Reference>
@@ -120,6 +143,10 @@
  <HintPath>/Users/bradleya/Library/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{0EA1BD38-58A9-F7BA-BB32-3439B4367B70}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
@@ -128,5 +155,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
 </Project>

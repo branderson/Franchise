@@ -1,3 +1,6 @@
 [submodule "Assets/Scripts/Utility"]
 	path = Assets/Scripts/Utility
 	url = https://github.com/branderson/UnityUtility
+[submodule "Assets/Scripts/TerrainGenerator"]
+	path = Assets/Scripts/TerrainGenerator
+	url = https://github.com/branderson/UnityTerrainGenerator
