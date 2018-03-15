@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Franchise", "Franchise.csproj", "{7AA663E5-63A3-D516-7BB3-FAE4C4B0D90B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Franchise.Plugins", "Franchise.Plugins.csproj", "{FE9FEA99-3A96-933F-67AB-3A070945EBD7}"
